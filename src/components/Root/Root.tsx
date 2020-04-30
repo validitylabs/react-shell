@@ -1,5 +1,5 @@
 import React from 'react';
-import Shell from '../shell/Shell';
+import { Shell } from '../Shell';
 
 export const Root = () => {
     return <Shell />;

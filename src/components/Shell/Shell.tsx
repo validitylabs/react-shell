@@ -18,7 +18,7 @@ interface IProps {
     [classes: string]: IClassItem;
 }
 
-const Shell: FunctionComponent<IProps> = (props) => {
+const ShellComponent: FunctionComponent<IProps> = (props) => {
     const dev = process.env.NODE_ENV === 'production' ? '' : 'DEV |';
 
     return (
@@ -35,4 +35,4 @@ const Shell: FunctionComponent<IProps> = (props) => {
     );
 };
 
-export default withStyles(styles)(Shell);
+export const Shell = withStyles(styles)(ShellComponent);
