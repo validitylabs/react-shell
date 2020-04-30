@@ -1,0 +1,36 @@
+{
+    "name": "@validitylabs/react-shell",
+    "version": "1.0.0",
+    "description": "Basic react shell boilerplate",
+    "author": "Patrice Juergens <patrice.juergens@validitylabs.org>",
+    "license": "GPL-3.0-only",
+    "main": "./src/public/index.pug",
+    "scripts": {
+        "serve": "cross-env NODE_ENV=development parcel ./src/index.pug --out-file index.html --https --port 8080 --hmr-port 39213",
+        "build": "cross-env NODE_ENV=production parcel build ./src/index.pug --no-source-maps",
+        "test": "jest"
+    },
+    "engines": {
+        "node": "^12.16.x"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:validitylabs/react-shell.git"
+    },
+    "dependencies": {
+        "@material-ui/core": "^4.9.12",
+        "@material-ui/icons": "^4.9.1",
+        "axios": "^0.19.2",
+        "pug": "^2.0.4",
+        "react": "^16.13.0",
+        "react-dom": "^16.13.0"
+    },
+    "devDependencies": {
+        "@types/node": "^13.13.4",
+        "@types/react": "^16.9.34",
+        "@types/react-dom": "^16.9.7",
+        "cross-env": "^7.0.2",
+        "parcel-bundler": "^1.12.4",
+        "typescript": "^3.8.3"
+    }
+}
