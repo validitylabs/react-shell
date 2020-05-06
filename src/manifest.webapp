@@ -1,0 +1,14 @@
+{
+  "version": "1.0.0",
+  "name": "React Shell",
+  "description": "React shell boilerplate",
+  "icons": {
+    "60": "/assets/favicons/firefox_app_60x60.png",
+    "128": "/assets/favicons/firefox_app_128x128.png",
+    "512": "/assets/favicons/firefox_app_512x512.png"
+  },
+  "developer": {
+    "name": "Patrice Juergens <patrice.juergens@validitylabs.org>",
+    "url": "https://github.com/validitylabs/react-shell"
+  }
+}

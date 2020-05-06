@@ -6,6 +6,7 @@
     "license": "GPL-3.0-only",
     "main": "./src/public/index.pug",
     "scripts": {
+        "setup": "env-cmd ts-node ./utils/setup.ts",
         "serve": "cross-env NODE_ENV=development parcel ./src/index.pug --out-file index.html --https --port 8080 --hmr-port 39213",
         "build": "cross-env NODE_ENV=production parcel build ./src/index.pug --no-source-maps",
         "test": "jest"
@@ -23,7 +24,9 @@
         "axios": "^0.19.2",
         "pug": "^2.0.4",
         "react": "^16.13.0",
-        "react-dom": "^16.13.0"
+        "react-dom": "^16.13.0",
+        "react-helmet": "^6.0.0",
+        "react-swipeable": "^5.5.1"
     },
     "devDependencies": {
         "@types/enzyme": "^3.10.5",
@@ -32,12 +35,20 @@
         "@types/node": "^13.13.4",
         "@types/react": "^16.9.34",
         "@types/react-dom": "^16.9.7",
+        "@types/react-helmet": "^5.0.15",
+        "@types/shelljs": "^0.8.7",
+        "chalk": "^4.0.0",
+        "convert-svg-to-png": "^0.5.0",
         "cross-env": "^7.0.2",
+        "env-cmd": "^10.1.0",
         "enzyme": "^3.11.0",
         "enzyme-adapter-react-16": "^1.15.2",
+        "favicons": "^6.0.0",
         "jest": "^25.5.2",
         "parcel-bundler": "^1.12.4",
+        "shelljs": "^0.8.4",
         "ts-jest": "^25.4.0",
+        "ts-node": "^8.10.1",
         "typescript": "^3.8.3"
     }
 }

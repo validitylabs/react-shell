@@ -26,7 +26,7 @@ const ShellComponent: FunctionComponent<IProps> = (props) => {
             <Grid justify="center" alignItems="center" direction="row" container spacing={2}>
                 <Grid item xs={12}>
                     <Typography variant="h2">
-                        {dev} {process.env.APP_TITLE}
+                        {dev} {process.env.APP_NAME}
                     </Typography>
                     <Typography variant="body1">here we go...</Typography>
                 </Grid>
