@@ -12,6 +12,8 @@
         "favicons",
         "msapplication",
         "mstile",
+        "precache",
+        "precaching",
         "promisify",
         "resizer",
         "validitylabs",

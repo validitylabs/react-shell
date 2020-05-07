@@ -1,9 +1,11 @@
 # react-shell
 
-React shell boilerplate for new react applications.
+React shell boilerplate.
 
 ## @TODO:
 
--   service worker => https://developers.google.com/web/tools/workbox/guides/get-started
--   swipe
--   helmet
+-   use local packages instead of CDN for workbox (service worker) and refactor to TS
+-   implement swipe
+-   implement helmet
+-   implement refresh cache for service worker
+-   implement PWA push messages
